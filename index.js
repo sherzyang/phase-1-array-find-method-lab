@@ -1,6 +1,5 @@
 function superbowlWin(record){
-    function dolphin (record){return record.result === "W"};
-    let obj = record.find(dolphin);
+    let obj = record.find(record => record.result === "W");
     if (obj === undefined) {
         return undefined;
     }
